@@ -1,0 +1,13 @@
+import java.util.HashMap;
+
+public class ArrayFrequencyCountHashMap {
+    public static void main(String args[]){
+        HashMap<Integer,Integer> map =new HashMap<>();
+        int a[] ={1, 2, 3, 2, 1, 1, 4};
+        for(int b : a){
+            map.put(b,map.getOrDefault(b,0)+1);
+        }
+        System.out.println(map);
+    }
+
+}
