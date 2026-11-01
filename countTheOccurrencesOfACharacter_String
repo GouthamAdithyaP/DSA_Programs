@@ -1,0 +1,14 @@
+public class countTheOccurrencesOfACharacter_String {
+    public static void main(String args[]) {
+        String str = "programming";
+        char c = 'g';
+        int count=0;
+        for(int i=0;i<str.length();i++){
+            char v=str.charAt(i);
+          if(v=='g'){
+              count++;
+          }
+        }
+        System.out.println("The number of occurences of letter "+ c + " is " +count);
+    }
+}
