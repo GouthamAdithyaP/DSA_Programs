@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class CountOfNumbers {
+    public static void main(String args[]) {
+        System.out.print("enter a number: ");
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        int counter = 0;
+
+        while (num > 0) {
+            counter++;
+            num = num / 10;
+        }
+        System.out.print("Total count "+counter);
+    }
+}
