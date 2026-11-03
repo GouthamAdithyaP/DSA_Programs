@@ -1,0 +1,24 @@
+public class FirstDuplicateWithLoops {
+
+    static int findDuplicate(int[] arr) {
+        for (int i = 0; i <= arr.length - 1; i++) {
+            for (int j = i + 1; j <= arr.length - 1; j++) {
+                if (arr[i] == arr[j]) {
+                    return arr[i];   // return as soon as a match is found
+                }
+            }
+        }
+        return -1;                   // reached only if no duplicate exists
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {4, 2, 7, 2, 5, 4};
+        int result = findDuplicate(arr);
+
+        if (result != -1) {
+            System.out.println("The first duplicate integer is " + result);
+        } else {
+            System.out.println("No duplicate found");
+        }
+    }
+}
