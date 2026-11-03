@@ -1,0 +1,19 @@
+import java.util.HashMap;
+
+public class FirstDuplicateWithHashMap {
+    public static void main(String[] args) {
+        HashMap<Integer, Integer> map = new HashMap<>();
+        int[] arr = {4, 2, 7, 2, 5, 4};
+
+        for (int key : arr) {
+            if (map.containsKey(key)) {
+                System.out.println(
+                        "First duplicate: " + key
+                );
+                break;
+            }
+
+            map.put(key, 1);
+        }
+    }
+}
