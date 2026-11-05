@@ -1,0 +1,21 @@
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+public class GetAllDuplicateWithHashMap {
+public static void main(String args[]){
+    LinkedHashMap<Integer,Integer> map =new LinkedHashMap<>();
+    int arr[]={4, 2, 7, 2, 5, 4};
+    for(int key : arr){
+        map.put(key,map.getOrDefault(key,0)+1);
+    }
+    for(Map.Entry<Integer,Integer> entry : map.entrySet())
+            {
+            System.out.println("keys "+entry.getKey());
+            System.out.println("values "+entry.getValue());
+            if(entry.getValue()>1)
+            {
+                System.out.println("the first duplicate key in array is  "+entry.getKey());
+            }
+            }
+}
+}
