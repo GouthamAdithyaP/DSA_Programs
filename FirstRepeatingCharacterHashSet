@@ -1,0 +1,21 @@
+import java.util.HashSet;
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+public class FirstRepeatingCharacterHashSet {
+    public static void main(String args[]) {
+        boolean found =false;
+        String str ="programming";
+        HashSet<Character> set =new HashSet<>();
+        for(int i=0;i<str.length();i++) {
+            if(!set.add(str.charAt(i))){
+                found =true;
+                System.out.print("first repeating character is "+ str.charAt(i) );
+                break;
+            }
+        }
+        if(!found){
+            System.out.print("no repeating characters" );
+        }
+    }
+    }
