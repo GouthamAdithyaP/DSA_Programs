@@ -1,0 +1,21 @@
+import static java.lang.Math.sqrt;
+
+public class PrimeNumberCheck {
+    public static void main(String args[]){
+        int num=4;
+        boolean isprime=true;
+        for(int i=2;i<sqrt(num);i++){//why sqrt means like if the numbers sqrt value is divisble then it means it is divisbilbe no need to check entire this is sufficient
+            if(num%i==0){
+                isprime=false;
+                break;
+            }
+        }
+        if(isprime){
+            System.out.print("the given number is prime");
+        }
+        else{
+            System.out.print("the given number is not prime");
+        }
+    }
+
+}
