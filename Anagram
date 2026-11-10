@@ -1,5 +1,4 @@
 import java.util.Arrays;
-
 public class Anagrams_String {
     public static void main(String args[]) {
         String str1 = "listen";
@@ -29,7 +28,5 @@ public class Anagrams_String {
         } else {
             System.out.print("not a anagram");
         }
-
     }
-
 }
