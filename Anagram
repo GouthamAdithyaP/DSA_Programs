@@ -11,10 +11,12 @@ public class Anagrams_String {
         Arrays.sort(ch2);
         boolean anagram = true;
         int j = 0;
+
         if(str1.length()!=str2.length()){
             System.out.print("not a anagram");
             return;
         }
+
         for (int i = 0; i < str1.length(); i++) {
             if (ch1[i] != ch2[i]) {
                 anagram = false;
@@ -23,6 +25,7 @@ public class Anagrams_String {
                 anagram = true;
             }
         }
+
         if (anagram) {
             System.out.print("IS a anagram");
         } else {
