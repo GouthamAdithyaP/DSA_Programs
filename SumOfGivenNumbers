@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class SumOfGivenNumbers {
+    public static void main(String args[]) {
+        System.out.print("ENTER THE NUMBER: ");
+        Scanner sc = new Scanner(System.in);
+        int number = sc.nextInt();
+        SumOfGivenNumbers sum = new SumOfGivenNumbers();
+        int val=sum.FindSum(number);
+        System.out.print("the final sum: " +val);
+        sc.close();
+    }
+
+    public int FindSum(int number) {
+        int sum = 0;
+        while (number > 0) {
+            sum = sum + number % 10;
+            number = number / 10;
+        }
+        return sum;
+    }
+}
+
