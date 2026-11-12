@@ -15,6 +15,13 @@ public class Anagrams_String {
         boolean anagram = true;
         int j = 0;
 
+
+
+
+
+
+
+
         if(str1.length()!=str2.length()){
             System.out.print("not a anagram");
             return;
