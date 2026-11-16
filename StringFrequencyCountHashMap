@@ -6,6 +6,14 @@ public class StringFrequencyCountHashMap {
         StringFrequencyCountHashMap Freq =new StringFrequencyCountHashMap();
         Freq.getStringFreq(str);
     }
+
+
+
+
+
+
+
+
   public void getStringFreq(String str){
         HashMap<Character,Integer> map =new HashMap<>();
         for(int i=0;i<str.length();i++){
