@@ -1,5 +1,4 @@
 public class countVowelsAndConsonants {
-
     public static void main(String args[]){
         String str ="PROGRAMMING";
         str =str.toLowerCase();
