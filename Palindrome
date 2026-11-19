@@ -10,11 +10,13 @@ public class Palindrome {
         for(int i=0 ,j=str.length()-1 ; i<str.length();i++,j--){
                 char a= str.charAt(i);
                 char b= str.charAt(j);
+
                 if(a != b){
                     palindrome=false;
                     break;
                 }
             }
+
         if(palindrome){
             System.out.print("Given word is a palindrome") ;
         }
