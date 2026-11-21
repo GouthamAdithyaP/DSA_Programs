@@ -8,11 +8,19 @@ public class StringFrequencyCountHashMap {
     }
 
 
+
+
+
+
+
+
   public void getStringFreq(String str){
         HashMap<Character,Integer> map =new HashMap<>();
+
         for(int i=0;i<str.length();i++){
             map.put(str.charAt(i),map.getOrDefault(str.charAt(i),0)+1);
         }
+
         System.out.println("The frequency of each letter is "+map);
   }
 
