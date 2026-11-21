@@ -8,8 +8,6 @@ public class StringFrequencyCountHashMap {
     }
 
 
-
-
   public void getStringFreq(String str){
         HashMap<Character,Integer> map =new HashMap<>();
 
