@@ -15,8 +15,6 @@ public class countTheOccurrencesOfACharacter_String {
         System.out.println("The number of occurences of letter "+ c + " is " +count);
     }
 
-
-
 }
 
 
