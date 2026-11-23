@@ -1,6 +1,9 @@
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+
+
+
 public class FirstNonRepeatingCharacterHashMap {
     public static void main(String args[]){
         String str = "swiss";
@@ -16,5 +19,8 @@ public class FirstNonRepeatingCharacterHashMap {
         }
 
     }
+
+
+
 
 }
